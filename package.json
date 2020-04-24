@@ -1,0 +1,48 @@
+{
+  "name": "@tmobile/node-red-contrib-array-iterator",
+  "version": "0.0.5",
+  "description": "Given an array input, when this node is executed it will pass the “next” value of the array to the succeeding connected node(s).",
+  "main": "dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prepack": "tsc && copyfiles ./src/**/*.html dist/ --up=1",
+    "build": "npm run prepack",
+    "build:ci": "npm pack --unsafe-perm",
+    "test": "mocha -r ts-node/register \"**/*.spec.ts\"",
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/tmobile/iot-mobile/node-red-packages/array-iterator.git"
+  },
+  "keywords": [
+    "Node-RED",
+    "Array Iterator",
+    "IoT-Mobile"
+  ],
+  "author": "James Tharpe, @jamestharpe",
+  "license": "Apache-2.0",
+  "node-red": {
+    "nodes": {
+      "array-iterator": "dist/array-iterator.js"
+    }
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.13.0",
+    "@types/node-red": "^0.20.1",
+    "chai": "^4.2.0",
+    "copyfiles": "^2.2.0",
+    "mocha": "^7.1.1",
+    "node-red": "^1.0.5",
+    "node-red-node-test-helper": "^0.2.3",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "publishConfig": {
+    "@tmobile:registry": "https://gitlab.com/api/v4/projects/18231362/packages/npm/"
+  }
+}

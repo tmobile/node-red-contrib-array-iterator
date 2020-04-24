@@ -1,0 +1,81 @@
+[
+  {
+    "id": "b5d95c1d.92bec",
+    "type": "change",
+    "z": "84ec39fc.95fd58",
+    "name": "Set Array Values",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "[\"item one\", \"item two\", \"item three\"]",
+        "tot": "json"
+      }
+    ],
+    "action": "",
+    "property": "",
+    "from": "",
+    "to": "",
+    "reg": false,
+    "x": 260,
+    "y": 320,
+    "wires": [
+      [
+        "291b1022.18ce5"
+      ]
+    ]
+  },
+  {
+    "id": "99d0836f.ded99",
+    "type": "inject",
+    "z": "84ec39fc.95fd58",
+    "name": "",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "x": 80,
+    "y": 320,
+    "wires": [
+      [
+        "b5d95c1d.92bec"
+      ]
+    ]
+  },
+  {
+    "id": "6dd3506.fd9bdb",
+    "type": "debug",
+    "z": "84ec39fc.95fd58",
+    "name": "",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "false",
+    "x": 690,
+    "y": 320,
+    "wires": []
+  },
+  {
+    "id": "291b1022.18ce5",
+    "type": "array-iterator",
+    "z": "84ec39fc.95fd58",
+    "name": "",
+    "input": "payload",
+    "inputType": "msg",
+    "outputType": "msg",
+    "output": "payload",
+    "repeat": false,
+    "x": 470,
+    "y": 320,
+    "wires": [
+      [
+        "6dd3506.fd9bdb"
+      ]
+    ]
+  }
+]
