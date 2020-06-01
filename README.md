@@ -1,8 +1,7 @@
 # Array Iterator
 
-[![Build Status](https://travis-ci.com/tmobile/node-red-contrib-array-iterator.svg?branch=master)](https://travis-ci.com/tmobile/node-red-contrib-array-iterator)
+[![Build Status](https://travis-ci.com/tmobile/node-red-contrib-array-iterator.svg?branch=master)](https://travis-ci.com/tmobile/node-red-contrib-array-iterator) ![GitHub package.json version](https://img.shields.io/github/package-json/v/tmobile/node-red-contrib-array-iterator?style=flat-square) ![npm (scoped)](https://img.shields.io/npm/v/@tmus/node-red-contrib-array-iterator?style=flat-square)
 
-[![npm version](http://img.shields.io/npm/v/REPO.svg?style=flat)](https://npmjs.org/package/@tmus/node-red-contrib-array-iterator "View this project on npm")
 
 Ruby gem (shields.io)
 Given an array input, when this node is executed it will pass the “next” value
