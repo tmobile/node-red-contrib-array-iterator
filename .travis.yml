@@ -9,6 +9,10 @@ install:
 jobs:
   include:
   - stage: build
+    script: npm run test && npm run build
+    on:
+      branch: master
+  - stage: pr-build
     if: "(type IN (pull_request))"
     script: npm run test && npm run build
   - stage: deploy
