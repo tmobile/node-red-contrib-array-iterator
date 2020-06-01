@@ -1,6 +1,6 @@
 {
-  "name": "@tmobile/node-red-contrib-array-iterator",
-  "version": "0.0.5",
+  "name": "@tmus/node-red-contrib-array-iterator",
+  "version": "0.0.6",
   "description": "Given an array input, when this node is executed it will pass the “next” value of the array to the succeeding connected node(s).",
   "main": "dist/index.js",
   "files": [
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/tmobile/iot-mobile/node-red-packages/array-iterator.git"
+    "url": "git+https://github.com/tmobile/node-red-contrib-array-iterator.git"
   },
   "keywords": [
     "Node-RED",
     "Array Iterator",
     "IoT-Mobile"
   ],
-  "author": "James Tharpe, @jamestharpe",
+  "author": "T-Mobile",
   "license": "Apache-2.0",
   "node-red": {
     "nodes": {
@@ -42,7 +42,8 @@
     "ts-node": "^8.8.2",
     "typescript": "^3.8.3"
   },
-  "publishConfig": {
-    "@tmobile:registry": "https://gitlab.com/api/v4/projects/18231362/packages/npm/"
-  }
+  "bugs": {
+    "url": "https://github.com/tmobile/node-red-contrib-array-iterator/issues"
+  },
+  "homepage": "https://github.com/tmobile/node-red-contrib-array-iterator"
 }
