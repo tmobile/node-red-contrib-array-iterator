@@ -1,6 +1,6 @@
 {
   "name": "@tmus/node-red-contrib-array-iterator",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Given an array input, when this node is executed it will pass the “next” value of the array to the succeeding connected node(s).",
   "main": "dist/index.js",
   "files": [

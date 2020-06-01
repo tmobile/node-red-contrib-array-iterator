@@ -1,5 +1,10 @@
 # Array Iterator
 
+[![Build Status](https://travis-ci.com/tmobile/node-red-contrib-array-iterator.svg?branch=master)](https://travis-ci.com/tmobile/node-red-contrib-array-iterator)
+
+[![npm version](http://img.shields.io/npm/v/REPO.svg?style=flat)](https://npmjs.org/package/@tmus/node-red-contrib-array-iterator "View this project on npm")
+
+Ruby gem (shields.io)
 Given an array input, when this node is executed it will pass the “next” value
 of the array to the succeeding connected node(s).
 
