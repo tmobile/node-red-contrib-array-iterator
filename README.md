@@ -10,7 +10,7 @@ of the array to the succeeding connected node(s).
 
 ## Install
 
-`npm install node-red @tmus/node-red-contrib-array-iterator`
+`npm install @tmus/node-red-contrib-array-iterator`
 
 ## Usage
 
