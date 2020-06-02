@@ -14,8 +14,6 @@ export default function arrayIterator(RED: Red) {
 
     this.repeat = config.repeat || false;
 
-    console.log("ArrayIteratorNode, constructor", config);
-
     node.on("input", function (msg, send) {
       const inputValue = RED.util.evaluateNodeProperty(
         this.input, // "payload", "widgets", "gadgets", etc.
