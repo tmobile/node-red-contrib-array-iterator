@@ -11,7 +11,7 @@
     "build": "npm run prepack",
     "build:ci": "npm pack --unsafe-perm",
     "test": "mocha -r ts-node/register \"**/*.spec.ts\"",
-    "start": "ts-node src/index.ts"
+    "start": "npm run build && node-red"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,8 @@
   "keywords": [
     "Node-RED",
     "Array Iterator",
-    "IoT-Mobile"
+    "IoT",
+    "Internet of Things"
   ],
   "author": "T-Mobile",
   "license": "Apache-2.0",
@@ -32,7 +33,7 @@
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
-    "@types/node": "^13.13.0",
+    "@types/node": "^13.13.9",
     "@types/node-red": "^0.20.1",
     "chai": "^4.2.0",
     "copyfiles": "^2.2.0",
