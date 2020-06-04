@@ -1,6 +1,6 @@
 {
   "name": "@tmus/node-red-contrib-array-iterator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Given an array input, when this node is executed it will pass the “next” value of the array to the succeeding connected node(s).",
   "main": "dist/index.js",
   "files": [
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/tmobile/node-red-contrib-array-iterator.git"
   },
   "keywords": [
-    "Node-RED",
+    "node-red",
     "Array Iterator",
     "IoT",
     "Internet of Things"
